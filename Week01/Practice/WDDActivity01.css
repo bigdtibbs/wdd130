@@ -1,0 +1,34 @@
+/*Changes the whole body of the web page.*/
+body {
+    text-align: center;
+}
+
+/*Changes the navigation menu at the top of the page.*/
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+/*Changes the links inside of the navigation menu.*/
+a {
+    color: white;
+    margin: 40px;
+}
+
+h1 {
+    color: steelblue;
+}
+
+img {
+    width: 800px;
+    border: 4px solid steelblue;
+}
+
+p {
+    padding: 10px;
+}
+
+footer {
+    background-color: steelblue;
+    color: white;
+}
