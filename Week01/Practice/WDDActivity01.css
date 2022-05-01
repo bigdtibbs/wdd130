@@ -28,6 +28,18 @@ p {
     padding: 10px;
 }
 
+/*# Changes ID tags. Only one ID tage per element.*/
+#active {
+    background-color: white;
+    color: steelblue;
+}
+
+/*.Changes class tags. Multiple elements can share the same class tag.*/
+.main-para {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
 footer {
     background-color: steelblue;
     color: white;
