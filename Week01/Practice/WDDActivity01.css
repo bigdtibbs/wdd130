@@ -1,32 +1,51 @@
 /*Changes the whole body of the web page.*/
 body {
-    text-align: center;
+    /* text-align: center; */
 }
+
+/* * {
+    border: 2px solid blue;
+} */
 
 /*Changes the navigation menu at the top of the page.*/
 nav {
     background-color: steelblue;
     padding: 10px;
+    text-align: center;
 }
 
 /*Changes the links inside of the navigation menu.*/
 a {
     color: white;
     margin: 40px;
+    font-size: 1.5em;
 }
 
 h1 {
+    text-align: center;
     color: steelblue;
 }
 
 img {
-    width: 800px;
+    /* width: 800px; */
+    /* width: 80%; */
+    display: block;
+    width: 80%;
+    margin: 0 auto;
     border: 4px solid steelblue;
 }
 
-p {
-    padding: 10px;
+main p {
+    width: 80%;
+    /* margin: 0 auto; */
+    margin: 50px auto;
+    text-align: center;
 }
+
+/* p {
+    padding: 10px;
+    width: 80%;
+} */
 
 /*# Changes ID tags. Only one ID tage per element.*/
 #active {
@@ -43,4 +62,5 @@ p {
 footer {
     background-color: steelblue;
     color: white;
+    text-align: center;
 }
