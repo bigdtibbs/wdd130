@@ -1,0 +1,52 @@
+/* Never tried this before. I want to for this project. */
+/* Declare variables. */
+:root {
+    --primary-color: #00A1E0;
+    --secondary-color: #6A605C ;
+    --accent1-color: #1DD3B0;
+    --accent2-color: #FFF2F1;
+    --accent3-color: #003E1F;
+}
+
+/* CSS Rules */
+body {
+    background-color: var(--accent2-color);
+}
+
+header {
+    background-color: #1DD3B0A0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-align: center;
+    color: var(--accent2-color)
+}
+
+nav a:hover {
+    background-color: var(--accent3-color);
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
