@@ -1,7 +1,7 @@
 /*Changes the whole body of the web page.*/
-body {
-    /* text-align: center; */
-}
+/* body {
+    text-align: center;
+} */
 
 /* * {
     border: 2px solid blue;
@@ -19,6 +19,11 @@ a {
     color: white;
     margin: 40px;
     font-size: 1.5em;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
 }
 
 h1 {
@@ -64,3 +69,13 @@ footer {
     color: white;
     text-align: center;
 }
+
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+/* nav, footer {
+    background-color: steelblue;
+    color: white;
+} */
