@@ -1,0 +1,49 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    background-color: rgb(92, 90, 90);
+
+}
+
+#title {
+    max-width: 800px;
+    background-color: rgb(92, 90, 90);
+}
+
+span {
+    background-color: rgb(92, 90, 90);
+    display: inline-block;
+    max-width: 800px;
+}
+
+/* .inline img {
+    max-width: 150px;
+    border: 10px black;
+    border-radius: 70%;
+    padding: 20px 55px;
+} */
+
+.inline img {
+    border-radius: 100%;
+    width: 150px;
+    border: 10px solid rgb(37, 36, 36);
+    margin: 20px 47px;
+}
+
+/* #desk {
+    width: 150px;
+    padding: 20px 55px;
+}
+
+#graphic {
+    width: 150px;
+    padding: 20px 55px;
+}
+
+#person {
+    width: 150px;
+    padding: 20px 55px;
+} */

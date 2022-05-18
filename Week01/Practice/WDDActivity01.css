@@ -1,7 +1,8 @@
 /*Changes the whole body of the web page.*/
-/* body {
-    text-align: center;
-} */
+body {
+    /* text-align: center; */
+    margin: 0;
+}
 
 /* * {
     border: 2px solid blue;
@@ -10,14 +11,15 @@
 /*Changes the navigation menu at the top of the page.*/
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 25px;
     text-align: center;
 }
 
 /*Changes the links inside of the navigation menu.*/
 a {
     color: white;
-    margin: 40px;
+    padding: 25px;
+    /* margin: 40px; */
     font-size: 1.5em;
 }
 
@@ -29,6 +31,7 @@ a:hover {
 h1 {
     text-align: center;
     color: steelblue;
+    margin: 50px 0;
 }
 
 img {
@@ -72,6 +75,7 @@ footer {
 
 footer p {
     font-size: 20px;
+    padding: 25px;
     margin: 20px auto;
 }
 
