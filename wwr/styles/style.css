@@ -1,20 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Tajawal&display=swap');
+
 /* Never tried this before. I want to for this project. */
 /* Declare variables. */
 :root {
+
+    /*Color variables*/
     --primary-color: #00A1E0;
     --secondary-color: #6A605C ;
     --accent1-color: #1DD3B0;
     --accent2-color: #FFF2F1;
     --accent3-color: #003E1F;
+
+    /*Font variables*/
+    --heading-font: 'Tajawal', Helvetica, sans-serif;
+    --paragraph-font: 'League Spartan', Helvetica, sans-serif;
 }
 
 /* CSS Rules */
 body {
     background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #1DD3B0A0;
+    font-family: var(--heading-font);
 }
 
 #content {
@@ -24,12 +37,14 @@ header {
 
 nav {
     background-color: var(--secondary-color);
+    padding: 20px;
 }
 
 nav a {
     text-align: center;
     color: var(--accent2-color);
     text-decoration: none;
+    padding: 20px;
 }
 
 nav a:hover {
@@ -41,8 +56,16 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+}
+
 h4 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -54,10 +77,18 @@ h4 {
     background-color: var(--primary-color);
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .book, .join {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     text-decoration: none;
+    font-size: 28px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -68,10 +99,14 @@ h4 {
 .home-title {
     color: whitesmoke;
     background-color: #00A1E0;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .button-box {
@@ -81,18 +116,39 @@ h4 {
 .msg {
     background-color: var(--primary-color);
     color: whitesmoke;
+    line-height: 1.3em;
+    padding: 35px;
+    margin-top: 40px;
 }
 
 .msg h2 {
     color: whitesmoke;
+    font-family: var(--heading-font);
 }
 
 .msg p {
-    color: var(--accent2-color)
+    color: var(--accent2-color);
+    font-size: 1em;
+    padding-bottom: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 100px 0;
+}
+
+.card-img {
+    border: 10px solid var(--accent1-color);
+}
+
+.mountains {
+    padding-top: 100px;
 }
 
 footer {
     background-color: #1DD3B0A0;
+    font-size: .7em;
+    padding: 25px 50px;
+    margin-top: 60px;
 }
 
 footer h3 {
@@ -105,9 +161,13 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--accent2-color)
+    color: var(--accent2-color);
 }
 
 footer h3 a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
