@@ -41,7 +41,7 @@
   /* This is the parent of the activity 2 boxes. */
 }
 .red2 {
-  width: 100%;
+  width: 100px;
   height: 100px; 
   background-color: red;
 } 
