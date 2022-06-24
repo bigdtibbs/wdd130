@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Montserrat:wght@300&display=swap');
+
+:root {
+  /* Color Pallette. */
+  --primary-color: #495867;
+  --secondary-color: #BDD5EA;
+  --accent1-color: #FE5F55;
+  --accent2-color: #F7F7FF;
+
+  /* Specific Colors for Tages/Elements. */
+  --headline-color-on-white: #495867;  /* headlines on a white background */ 
+  --headline-color-on-color: #BDD5EA; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #495867; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #BDD5EA; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #495867;
+  --nav-link-color: #BDD5EA;
+  --nav-background-color: #FE5F55;
+  --nav-hover-link-color: #F7F7FF;
+  --nav-hover-background-color: #396E94;
+
+    /* Fonts for pages. */
+    --heading-font: 'Gluten', cursive, Helvetica, sans-serif;
+    --paragraph-font: 'Montserrat', Helvetica, sans-serif;
+}
+
