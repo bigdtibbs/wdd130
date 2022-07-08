@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Montserrat:wght@300&display=swap');
+
+:root {
+  /* Color Pallette. */
+  --primary-color: #495867;
+  --secondary-color: #BDD5EA;
+  --accent1-color: #FE5F55;
+  --accent2-color: #F7F7FF;
+
+  /* Specific Colors for Tages/Elements. */
+  --headline-color-on-white: #495867;  /* headlines on a white background */ 
+  --headline-color-on-color: #BDD5EA; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #495867; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #BDD5EA; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #495867;
+  --nav-link-color: #BDD5EA;
+  --nav-background-color: #FE5F55;
+  --nav-hover-link-color: #F7F7FF;
+  --nav-hover-background-color: #396E94;
+
+    /* Fonts for pages. */
+    --heading-font: 'Gluten', cursive, Helvetica, sans-serif;
+    --paragraph-font: 'Montserrat', Helvetica, sans-serif;
+}
+
+/* CSS RULES */
+
+/* Universal Rules */ 
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header/Nav Bar Rules */ 
+#main-content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--accent1-color);
+  font-family: var(--heading-font);
+  height: 420px;
+  display: grid;
+  grid-template-columns: 500px auto;
+}
+
+header h2 {
+  padding: 15px;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  grid-column: 2/3;
+}
+
+header img {
+  max-height: 400px;
+  width: auto;
+  margin: 10px 5px 5px 10px;
+}
+
+nav {
+  background-color: var(--accent1-color);
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  grid-column: 3/4;
+}
+
+nav a {
+  text-align: center;
+  color: var(--accent2-color);
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+}
+
+/* Body Rules */
+#home-quote {
+    padding: 25px;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.banner-grid img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 15px;
+}
+
+.banner-grid p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 15px;
+}
+
+.vet-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 17px;
+    margin: 15px;
+    /* position: relative; */
+    /* width: 50%; */
+}
+
+.vet-grid h2 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.blacksmith-vet {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  position: relative;
+  width: 50%;
+}
+
+.bridgerland-vet {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  position: relative;
+  width: 50%;
+}
+
+.heritage-vet {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  position: relative;
+  width: 50%;
+}
+
+.cache-meadow-vet {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  position: relative;
+  width: 50%;
+}
+
+.mountain-view-vet {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  position: relative;
+  width: 50%;
+}
+
+.north-cache-vet {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  position: relative;
+  width: 50%;
+}
+
+.humane-society {
+  grid-column: 2/3;
+  position: relative;
+  width: 50%;
+}
+
+.additonal-resources {
+  grid-column: 3/4;
+  position: relative;
+  width: 50%;
+}
+
+.additonal-resources h3 {
+  text-align: center;
+}
+
+.link-img {
+    opacity: 1;
+    display: block;
+    width: 250px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+img[alt="Pet Loss Resources"] {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.link-text {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 15px;
+
+}
+
+.blacksmith-vet:hover .link-img {
+    opacity: 0.3;
+}
+
+.blacksmith-vet:hover .link-text {
+    opacity: 1;
+}
+
+.blacksmith-vet .text {
+    margin-bottom: 200px;
+}
+
+.bridgerland-vet:hover .link-img {
+  opacity: 0.3;
+}
+
+.bridgerland-vet:hover .link-text {
+  opacity: 1;
+}
+
+.bridgerland-vet .text {
+  margin-bottom: 200px;
+}
+
+.heritage-vet:hover .link-img {
+  opacity: 0.3;
+}
+
+.heritage-vet:hover .link-text {
+  opacity: 1;
+}
+
+.heritage-vet .text {
+  margin-bottom: 200px;
+}
+
+.cache-meadow-vet:hover .link-img {
+  opacity: 0.3;
+}
+
+.cache-meadow-vet:hover .link-text {
+  opacity: 1;
+}
+
+.cache-meadow-vet .text {
+  margin-bottom: 200px;
+}
+
+.mountain-view-vet:hover .link-img {
+  opacity: 0.3;
+}
+
+.mountain-view-vet:hover .link-text {
+  opacity: 1;
+}
+
+.mountain-view-vet .text {
+  margin-bottom: 200px;
+}
+
+.north-cache-vet:hover .link-img {
+  opacity: 0.3;
+}
+
+.north-cache-vet:hover .link-text {
+  opacity: 1;
+}
+
+.north-cache-vet .text {
+  margin-bottom: 200px;
+}
+
+.humane-society:hover .link-img {
+  opacity: 0.3;
+}
+
+.humane-society:hover .link-text {
+  opacity: 1;
+}
+
+.humane-society .text {
+  margin-bottom: 200px;
+}
+
+.additonal-resources:hover .link-img {
+  opacity: 0.3;
+}
+
+.additonal-resources:hover .link-text {
+  opacity: 1;
+}
+
+.additonal-resources .text {
+  margin-bottom: 200px;
+}
+
+#add-res {
+  text-align: center;
+  padding: 25px;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+
+/* Footer Rules */
+footer {
+  background-color: var(--primary-color);
+  font-size: .7em;
+  padding: 25px 50px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h3 {
+  color: var(--accent2-color);
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent2-color);
+}
+
+/* Media Query Code*/
+@media screen and (max-width: 900px) {
+  #hero, .vet-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+
+  #background {
+      display: none;
+  }
+
+  footer {
+      margin-top: 25px;
+  }
+}
